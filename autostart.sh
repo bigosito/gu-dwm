@@ -1,4 +1,7 @@
 #!/bin/bash
 
-~/.dwm/scripts/statusbar.sh &
+while true; do
+        xsetroot -name "$(~/.dwm/scripts/statusbar.sh)"
+        sleep 2
+done &
 nitrogen --restore
